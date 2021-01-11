@@ -1,0 +1,330 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2E8439A0-3C28-4C5D-B6B8-51BC8D5BD60C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MettesPlanteskole</RootNamespace>
+    <AssemblyName>MettesPlanteskole</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44329</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database.mdf" />
+    <Content Include="Database_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database.mdf</DependentUpon>
+    </Content>
+    <Content Include="Default.aspx" />
+    <Content Include="images\blandet\banner.jpg" />
+    <Content Include="images\blandet\banner_new_size.jpg" />
+    <Content Include="images\blandet\filial_1.jpg" />
+    <Content Include="images\blandet\filial_2.jpg" />
+    <Content Include="images\blandet\filial_3.jpg" />
+    <Content Include="images\blandet\lokation.jpg" />
+    <Content Include="images\blandet\menu_prik.jpg" />
+    <Content Include="images\frontpage\131383618260912609lokation.jpg" />
+    <Content Include="images\frontpage\131384436926643281lokation.jpg" />
+    <Content Include="images\frontpage\131384453823429527lokation.jpg" />
+    <Content Include="images\planter\buske\buksbom1.jpg" />
+    <Content Include="images\planter\buske\buskbum2.jpg" />
+    <Content Include="images\planter\buske\buskbum3.jpg" />
+    <Content Include="images\planter\buske\hvidbladet1.jpg" />
+    <Content Include="images\planter\buske\hvidbladet2.jpg" />
+    <Content Include="images\planter\buske\hvidbladet3.jpg" />
+    <Content Include="images\planter\buske\slagterpalme1.jpg" />
+    <Content Include="images\planter\buske\slagterpalme2.jpg" />
+    <Content Include="images\planter\buske\slagterpalme3.jpg" />
+    <Content Include="images\planter\frugttræer\aeble1.jpg" />
+    <Content Include="images\planter\frugttræer\aeble2.jpg" />
+    <Content Include="images\planter\frugttræer\aeble3.jpg" />
+    <Content Include="images\planter\frugttræer\blomme1.jpg" />
+    <Content Include="images\planter\frugttræer\blomme2.jpg" />
+    <Content Include="images\planter\frugttræer\blomme3.jpg" />
+    <Content Include="images\planter\frugttræer\paere1.jpg" />
+    <Content Include="images\planter\frugttræer\paere2.jpg" />
+    <Content Include="images\planter\frugttræer\paere3.jpg" />
+    <Content Include="images\planter\hortensia\blaumeise1.jpg" />
+    <Content Include="images\planter\hortensia\blaumeise2.jpg" />
+    <Content Include="images\planter\hortensia\blaumeise3.jpg" />
+    <Content Include="images\planter\hortensia\bluebird1.jpg" />
+    <Content Include="images\planter\hortensia\bluebird2.jpg" />
+    <Content Include="images\planter\hortensia\bluebird3.jpg" />
+    <Content Include="images\planter\hortensia\egeblads1.jpg" />
+    <Content Include="images\planter\hortensia\egeblads2.jpg" />
+    <Content Include="images\planter\hortensia\egeblads3.jpg" />
+    <Content Include="images\planter\roser\goldmarie1.jpg" />
+    <Content Include="images\planter\roser\goldmarie2.jpg" />
+    <Content Include="images\planter\roser\goldmarie3.jpg" />
+    <Content Include="images\planter\roser\newdawn1.jpg" />
+    <Content Include="images\planter\roser\newdawn2.jpg" />
+    <Content Include="images\planter\roser\newdawn3.jpg" />
+    <Content Include="images\planter\roser\prominen1.jpg" />
+    <Content Include="images\planter\roser\prominen2.jpg" />
+    <Content Include="images\planter\roser\prominen3.jpg" />
+    <Content Include="images\planter\roser\Sympathie1.jpg" />
+    <Content Include="images\planter\roser\Sympathie2.jpg" />
+    <Content Include="images\planter\roser\Sympathie3.jpg" />
+    <Content Include="images\resizer\Croppede\131378452742816017hvidbladet1.jpg" />
+    <Content Include="images\resizer\Croppede\131378452744166017hvidbladet2.jpg" />
+    <Content Include="images\resizer\Croppede\131378452744426017hvidbladet3.jpg" />
+    <Content Include="images\resizer\Croppede\131378452881696017buksbom1.jpg" />
+    <Content Include="images\resizer\Croppede\131378452881886017buskbum2.jpg" />
+    <Content Include="images\resizer\Croppede\131378452882096017buskbum3.jpg" />
+    <Content Include="images\resizer\Croppede\131378453050716017slagterpalme1.jpg" />
+    <Content Include="images\resizer\Croppede\131378453051556017slagterpalme2.jpg" />
+    <Content Include="images\resizer\Croppede\131378453051896017slagterpalme3.jpg" />
+    <Content Include="images\resizer\Croppede\131378453215126017goldmarie1.jpg" />
+    <Content Include="images\resizer\Croppede\131378453215366017goldmarie2.jpg" />
+    <Content Include="images\resizer\Croppede\131378453215666017goldmarie3.jpg" />
+    <Content Include="images\resizer\Croppede\131378453332566017newdawn1.jpg" />
+    <Content Include="images\resizer\Croppede\131378453333256017newdawn2.jpg" />
+    <Content Include="images\resizer\Croppede\131378453333516017newdawn3.jpg" />
+    <Content Include="images\resizer\Croppede\131378453451766017Sympathie1.jpg" />
+    <Content Include="images\resizer\Croppede\131378453452016017Sympathie2.jpg" />
+    <Content Include="images\resizer\Croppede\131378453452516017Sympathie3.jpg" />
+    <Content Include="images\resizer\Croppede\131378453609646017prominen1.jpg" />
+    <Content Include="images\resizer\Croppede\131378453609866017prominen2.jpg" />
+    <Content Include="images\resizer\Croppede\131378453610216017prominen3.jpg" />
+    <Content Include="images\resizer\Croppede\131378453902646017aeble1.jpg" />
+    <Content Include="images\resizer\Croppede\131378453902856017aeble2.jpg" />
+    <Content Include="images\resizer\Croppede\131378453903036017aeble3.jpg" />
+    <Content Include="images\resizer\Croppede\131378454060296017blomme1.jpg" />
+    <Content Include="images\resizer\Croppede\131378454060776017blomme2.jpg" />
+    <Content Include="images\resizer\Croppede\131378454061346017blomme3.jpg" />
+    <Content Include="images\resizer\Croppede\131378454258736017paere1.jpg" />
+    <Content Include="images\resizer\Croppede\131378454258946017paere2.jpg" />
+    <Content Include="images\resizer\Croppede\131378454259066017paere3.jpg" />
+    <Content Include="images\resizer\Croppede\131378454424006017bluebird1.jpg" />
+    <Content Include="images\resizer\Croppede\131378454424256017bluebird2.jpg" />
+    <Content Include="images\resizer\Croppede\131378454424766017bluebird3.jpg" />
+    <Content Include="images\resizer\Croppede\131378454585006017egeblads1.jpg" />
+    <Content Include="images\resizer\Croppede\131378454585536017egeblads2.jpg" />
+    <Content Include="images\resizer\Croppede\131378454586036017egeblads3.jpg" />
+    <Content Include="images\resizer\Croppede\131378454724176017blaumeise1.jpg" />
+    <Content Include="images\resizer\Croppede\131378454724496017blaumeise2.jpg" />
+    <Content Include="images\resizer\Croppede\131378454724716017blaumeise3.jpg" />
+    <Content Include="images\resizer\Original_Images\131376730967245926slagterpalme3.jpg" />
+    <Content Include="images\resizer\Original_Images\131376730968266130slagterpalme3.jpg" />
+    <Content Include="images\resizer\Original_Images\131376730968436164slagterpalme3.jpg" />
+    <Content Include="images\resizer\Original_Images\131376731961854808slagterpalme3.jpg" />
+    <Content Include="images\resizer\Original_Images\131376731962044846slagterpalme3.jpg" />
+    <Content Include="images\resizer\Original_Images\131376731962204878slagterpalme3.jpg" />
+    <Content Include="images\resizer\Original_Images\131376732328808184slagterpalme3.jpg" />
+    <Content Include="images\resizer\Original_Images\131376732329138250slagterpalme3.jpg" />
+    <Content Include="images\resizer\Original_Images\131376732329648352slagterpalme3.jpg" />
+    <Content Include="images\resizer\Original_Images\131376759968720609hvidbladet1.jpg" />
+    <Content Include="images\resizer\Original_Images\131376759969590783hvidbladet1.jpg" />
+    <Content Include="images\resizer\Original_Images\131376759969780821hvidbladet1.jpg" />
+    <Content Include="images\resizer\Original_Images\131378452742816017hvidbladet1.jpg" />
+    <Content Include="images\resizer\Original_Images\131378452744166017hvidbladet2.jpg" />
+    <Content Include="images\resizer\Original_Images\131378452744426017hvidbladet3.jpg" />
+    <Content Include="images\resizer\Original_Images\131378452881696017buksbom1.jpg" />
+    <Content Include="images\resizer\Original_Images\131378452881886017buskbum2.jpg" />
+    <Content Include="images\resizer\Original_Images\131378452882096017buskbum3.jpg" />
+    <Content Include="images\resizer\Original_Images\131378453050716017slagterpalme1.jpg" />
+    <Content Include="images\resizer\Original_Images\131378453051556017slagterpalme2.jpg" />
+    <Content Include="images\resizer\Original_Images\131378453051896017slagterpalme3.jpg" />
+    <Content Include="images\resizer\Original_Images\131378453215126017goldmarie1.jpg" />
+    <Content Include="images\resizer\Original_Images\131378453215366017goldmarie2.jpg" />
+    <Content Include="images\resizer\Original_Images\131378453215666017goldmarie3.jpg" />
+    <Content Include="images\resizer\Original_Images\131378453332566017newdawn1.jpg" />
+    <Content Include="images\resizer\Original_Images\131378453333256017newdawn2.jpg" />
+    <Content Include="images\resizer\Original_Images\131378453333516017newdawn3.jpg" />
+    <Content Include="images\resizer\Original_Images\131378453451766017Sympathie1.jpg" />
+    <Content Include="images\resizer\Original_Images\131378453452016017Sympathie2.jpg" />
+    <Content Include="images\resizer\Original_Images\131378453452516017Sympathie3.jpg" />
+    <Content Include="images\resizer\Original_Images\131378453609646017prominen1.jpg" />
+    <Content Include="images\resizer\Original_Images\131378453609866017prominen2.jpg" />
+    <Content Include="images\resizer\Original_Images\131378453610216017prominen3.jpg" />
+    <Content Include="images\resizer\Original_Images\131378453902646017aeble1.jpg" />
+    <Content Include="images\resizer\Original_Images\131378453902856017aeble2.jpg" />
+    <Content Include="images\resizer\Original_Images\131378453903036017aeble3.jpg" />
+    <Content Include="images\resizer\Original_Images\131378454060296017blomme1.jpg" />
+    <Content Include="images\resizer\Original_Images\131378454060776017blomme2.jpg" />
+    <Content Include="images\resizer\Original_Images\131378454061346017blomme3.jpg" />
+    <Content Include="images\resizer\Original_Images\131378454258736017paere1.jpg" />
+    <Content Include="images\resizer\Original_Images\131378454258946017paere2.jpg" />
+    <Content Include="images\resizer\Original_Images\131378454259066017paere3.jpg" />
+    <Content Include="images\resizer\Original_Images\131378454424006017bluebird1.jpg" />
+    <Content Include="images\resizer\Original_Images\131378454424256017bluebird2.jpg" />
+    <Content Include="images\resizer\Original_Images\131378454424766017bluebird3.jpg" />
+    <Content Include="images\resizer\Original_Images\131378454585006017egeblads1.jpg" />
+    <Content Include="images\resizer\Original_Images\131378454585536017egeblads2.jpg" />
+    <Content Include="images\resizer\Original_Images\131378454586036017egeblads3.jpg" />
+    <Content Include="images\resizer\Original_Images\131378454724176017blaumeise1.jpg" />
+    <Content Include="images\resizer\Original_Images\131378454724496017blaumeise2.jpg" />
+    <Content Include="images\resizer\Original_Images\131378454724716017blaumeise3.jpg" />
+    <Content Include="ProductInfo.aspx" />
+    <Content Include="Samlede_ordrer.aspx" />
+    <Content Include="se_kurv.aspx" />
+    <Content Include="Shoppingcart.aspx" />
+    <Content Include="StyleSheet_Admin.css" />
+    <Content Include="StyleSheet_Frontend.css" />
+    <Content Include="Web.config" />
+    <Content Include="Opret.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kurv.cs" />
+    <Compile Include="MasterPage_Frontend.Master.cs">
+      <DependentUpon>MasterPage_Frontend.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage_Frontend.Master.designer.cs">
+      <DependentUpon>MasterPage_Frontend.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ProductInfo.aspx.cs">
+      <DependentUpon>ProductInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductInfo.aspx.designer.cs">
+      <DependentUpon>ProductInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Opret.aspx.cs">
+      <DependentUpon>Opret.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Opret.aspx.designer.cs">
+      <DependentUpon>Opret.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Samlede_ordrer.aspx.cs">
+      <DependentUpon>Samlede_ordrer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Samlede_ordrer.aspx.designer.cs">
+      <DependentUpon>Samlede_ordrer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="se_kurv.aspx.cs">
+      <DependentUpon>se_kurv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="se_kurv.aspx.designer.cs">
+      <DependentUpon>se_kurv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shoppingcart.aspx.cs">
+      <DependentUpon>Shoppingcart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shoppingcart.aspx.designer.cs">
+      <DependentUpon>Shoppingcart.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage_Frontend.Master" />
+    <Content Include="images\planter\buske\Thumbs.db" />
+    <Content Include="images\planter\roser\Thumbs.db" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52670</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44329/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

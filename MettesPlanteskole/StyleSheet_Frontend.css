@@ -1,0 +1,230 @@
+﻿﻿ /*
+/////////////////////
+/       BASIC       /
+/////////////////////
+*/
+body {
+    font-family: Arial;
+    font-size: 10pt;
+}
+
+
+
+/*
+///////////////////////
+/       FORSIDE       /
+///////////////////////
+*/
+#top3 {
+    color: #8ab512;
+    text-decoration: none;
+    font-family: 'Trebuchet MS';
+}
+
+h1, h2, h4, h5, h6 {
+    color: #8AB512;
+    font-family: Verdana;
+}
+
+h3 {
+    color: #8ab512;
+    font-family: 'Trebuchet MS';
+}
+
+p {
+    font-size: 12.5pt;
+}
+
+.col-lg-12 {
+    padding: 0;
+}
+
+#openinghours {
+}
+
+.hr {
+    border-top: 3px dotted #b9b9b9;
+}
+
+footer {
+    background-color: #8bb513;
+}
+
+#footer_text {
+    color: #fff;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.Opret_Form {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+/*
+///////////////////
+/       NAV       /
+///////////////////
+*/
+.Button_Nav {
+    background-color: #eceee1;
+    color: #90918b;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: Verdana;
+}
+
+    .Button_Nav:hover {
+        background-color: #dfe7c0;
+    }
+
+a href {
+    font-family: 'Trebuchet MS';
+}
+
+nav {
+    font-family: Verdana;
+    font-size: 10pt;
+    background-color: #eceee1;
+}
+
+.dropbtn {
+    background-color: #eceee1;
+    color: #90918b;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #eceee1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        color: #90918b;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #dfe7c0;
+        }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #dfe7c0;
+}
+
+/*
+/////////////////////////////
+/       Indkøbskurven       /
+/////////////////////////////
+*/
+.Grid {
+    background-color: #fff;
+    margin: 5px 0 10px 0;
+    border: solid 1px #8ab512;
+    border-collapse: collapse;
+    font-family: Calibri;
+    color: #474747;
+}
+
+    .Grid td {
+        padding: 2px;
+        border: solid 1px #fff;
+    }
+
+    .Grid th {
+        padding: 4px 2px;
+        color: #fff;
+        background: #8ab512 url(Images/grid-header.png) repeat-x top;
+        font-size: 0.9em;
+    }
+
+    .Grid .alt {
+        background: #fcfcfc url(Images/grid-alt.png) repeat-x top;
+    }
+
+    .Grid .pgr {
+        background: #363670 url(Images/grid-pgr.png) repeat-x top;
+    }
+
+        .Grid .pgr table {
+            margin: 3px 0;
+        }
+
+        .Grid .pgr td {
+            border-width: 0;
+            padding: 0 6px;
+            border-left: solid 1px #666;
+            font-weight: bold;
+            color: #fff;
+            line-height: 12px;
+        }
+
+        .Grid .pgr a {
+            color: Gray;
+            text-decoration: none;
+        }
+
+            .Grid .pgr a:hover {
+                color: #000;
+                text-decoration: none;
+            }
+
+.Button_style {
+    background-color: #8ab512;
+    border-left: 1px solid #c8e47b;
+    border-top: 1px solid #c8e47b;
+    border-bottom: 1px solid #789d10;
+    border-right: 1px solid #789d10;
+    color: #fff;
+}
+
+.info_overskrift {
+    color: #000;
+}
+
+/*
+///////////////////////////////////////////////
+/       Indkøbskurven_Specifict_Product       /
+///////////////////////////////////////////////
+*/
+
+.btn_AddToBasket {
+    width: 50%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#header {
+    background-color: #eceee1;
+}
+
+#Buy_box {
+    text-align: center;
+    border: 1px solid #eceee1;
+    padding: 0px;
+    margin: 0px;
+}
