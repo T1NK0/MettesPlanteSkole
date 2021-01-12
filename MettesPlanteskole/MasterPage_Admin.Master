@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage_Admin.Master.cs" Inherits="MettesPlanteskole.MasterPage_Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <!-- FONTAWESOME -->
+    <link href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" rel="stylesheet">
+    <!-- Optional theme -->
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" rel="stylesheet">
+    <!-- Latest compiled and minified JavaScript -->
+    <script crossorigin="anonymous" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- ADMIN STYLESHEET -->
+    <link href="StyleSheetAdmin.css" rel="stylesheet" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav class="col-lg-2" id="admin_nav" style="position: fixed;">
+                <ul>
+                    <li><a href="Default.aspx"><i class="fa fa-window-maximize" aria-hidden="true"></i> Vis Siden</a></li>
+                    <li><a href="AdminOverview.aspx"><i class="fa fa-home" aria-hidden="true"></i> Admin Dashboard</a></li>
+                    <li><a href="Produkter.aspx"><i class="fa fa-list" aria-hidden="true"></i> Produkter</a></li>
+                    <li><a href="Category.aspx"><i class="fa fa-sort" aria-hidden="true"></i> Kategorier</a></li>
+                    <li><a href="FrontpageEditing.aspx"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Forside Redigering</a></li>
+                    <li>
+                        <asp:LinkButton ID="LinkButton_Logud" runat="server" OnClick="LinkButton_Logud_Click"><i class="fa fa-sign-out" aria-hidden="true"></i> Logud</asp:LinkButton></li>
+                </ul>
+            </nav>
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

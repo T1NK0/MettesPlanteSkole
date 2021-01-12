@@ -67,6 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminOverview.aspx" />
+    <Content Include="Category.aspx" />
     <Content Include="Database.mdf" />
     <Content Include="Database_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -213,6 +215,7 @@
     <Content Include="images\resizer\Original_Images\131378454724496017blaumeise2.jpg" />
     <Content Include="images\resizer\Original_Images\131378454724716017blaumeise3.jpg" />
     <Content Include="ProductInfo.aspx" />
+    <Content Include="Produkter.aspx" />
     <Content Include="Samlede_ordrer.aspx" />
     <Content Include="se_kurv.aspx" />
     <Content Include="Shoppingcart.aspx" />
@@ -222,6 +225,20 @@
     <Content Include="Opret.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminOverview.aspx.cs">
+      <DependentUpon>AdminOverview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminOverview.aspx.designer.cs">
+      <DependentUpon>AdminOverview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Category.aspx.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Category.aspx.designer.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -230,6 +247,13 @@
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Kurv.cs" />
+    <Compile Include="MasterPage_Admin.Master.cs">
+      <DependentUpon>MasterPage_Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage_Admin.Master.designer.cs">
+      <DependentUpon>MasterPage_Admin.Master</DependentUpon>
+    </Compile>
     <Compile Include="MasterPage_Frontend.Master.cs">
       <DependentUpon>MasterPage_Frontend.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -243,6 +267,13 @@
     </Compile>
     <Compile Include="ProductInfo.aspx.designer.cs">
       <DependentUpon>ProductInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Produkter.aspx.cs">
+      <DependentUpon>Produkter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Produkter.aspx.designer.cs">
+      <DependentUpon>Produkter.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Opret.aspx.cs">
@@ -278,6 +309,7 @@
     <Content Include="MasterPage_Frontend.Master" />
     <Content Include="images\planter\buske\Thumbs.db" />
     <Content Include="images\planter\roser\Thumbs.db" />
+    <Content Include="MasterPage_Admin.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
